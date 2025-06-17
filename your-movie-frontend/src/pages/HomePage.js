@@ -105,6 +105,7 @@ export default function HomePage() {
           grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
           gap: 1.5rem;
           justify-content: center;
+          color:red;
         }
 
         .loading-skeleton-grid {
@@ -119,6 +120,7 @@ export default function HomePage() {
           border-radius: 10px;
           height: 350px;
           animation: shimmer 1.5s infinite;
+          color:red;
         }
 
         .not-found-container {
@@ -133,7 +135,7 @@ export default function HomePage() {
 
         .not-found-title {
           font-size: 2rem;
-          color: #ff6584;
+          color: red;
           margin-bottom: 0.5rem;
         }
 
