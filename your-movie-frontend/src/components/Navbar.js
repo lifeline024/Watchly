@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { FaUserCircle, FaSignOutAlt, FaFilm } from "react-icons/fa";
-import { useNavigate } from "react-router-dom"; // Correct hook for navigation
-
+import { useNavigate } from "react-router-dom"; 
 export default function Navbar({ onFilter, user, onLogout, onProfile }) {
   const [search, setSearch] = useState("");
-  const navigate = useNavigate(); // ✅ use navigate here
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const delayDebounce = setTimeout(() => {
@@ -17,6 +16,9 @@ export default function Navbar({ onFilter, user, onLogout, onProfile }) {
   const onRequest = () => {
     navigate("/request");
   };
+    const onAdmin = () => {
+        navigate("/admin")
+      }
   return (
     <nav className="navbar">
       <div className="navbar-top">
@@ -31,7 +33,10 @@ export default function Navbar({ onFilter, user, onLogout, onProfile }) {
 
         {user && (
           <div className="navbar-actions">
-            
+            <button onClick={onAdmin} className="request-button">
+             {/* <FaFilm /> */}
+             Admin
+              </button>
             <button onClick={onProfile} className="profile-button">
               <FaUserCircle />
               {user.username || "Profile"}
