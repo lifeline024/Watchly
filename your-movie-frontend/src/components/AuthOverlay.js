@@ -35,8 +35,8 @@ export default function AuthOverlay({ onLogin }) {
   e.preventDefault();
 
   const endpoint = isLogin
-    ? "http://localhost:5000/api/auth/login"
-    : "http://localhost:5000/api/auth/signup";
+    ? "https://watchly-leod.onrender.com/api/auth/login"
+    : "https://watchly-leod.onrender.com/api/auth/signup";
 
   try {
     const payload = isLogin
