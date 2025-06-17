@@ -95,19 +95,19 @@ const movieCardStyles = `
   transform: scale(1.1);
 }
 
-.movie-rating {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 0.3rem 0.6rem;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
+// .movie-rating {
+//   position: absolute;
+//   top: 10px;
+//   right: 10px;
+//   background: rgba(0, 0, 0, 0.7);
+//   padding: 0.3rem 0.6rem;
+//   border-radius: 20px;
+//   display: flex;
+//   align-items: center;
+//   gap: 0.3rem;
+//   font-size: 0.9rem;
+//   font-weight: 600;
+// }
 
 .star-icon {
   color: #ffd700;
@@ -116,6 +116,7 @@ const movieCardStyles = `
 
 .movie-info {
   padding: 1rem;
+  color:red;
 }
 
 .movie-title {
