@@ -122,7 +122,7 @@ const movieCardStyles = `
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: white;
+  color: red;
 }
 
 .movie-genre {
