@@ -15,7 +15,7 @@ export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/movies")
+    axios.get("https://watchly-leod.onrender.com/api/movies")
       .then((res) => {
         setMovies(res.data);
         setFilteredMovies(res.data);
