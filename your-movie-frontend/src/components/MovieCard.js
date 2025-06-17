@@ -123,11 +123,12 @@ const movieCardStyles = `
   margin: 0;
   font-size: 1rem;
   font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: red;
+  color: #fff; /* white color for visibility */
+  background: transparent;
+  white-space: normal;
+  overflow: visible;
 }
+
 
 .movie-genre {
   margin: 0.3rem 0 0;
