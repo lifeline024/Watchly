@@ -21,8 +21,11 @@ export default function MovieCard({ movie, onClick }) {
         )}
       </div>
       <div className="movie-info">
-        <h3 className="movie-title">{movie.title || movie.caption || "Untitled Movie"}</h3>
-        <p className="movie-genre">{movie.genre || "Unknown Genre"}</p>
+        <h3 className="movie-title" style={{ color: "red" }}>
+  {movie.title || movie.caption || "Untitled Movie"}
+</h3>
+
+        // <p className="movie-genre">{movie.genre || "Unknown Genre"}</p>
       </div>
     </div>
   );
