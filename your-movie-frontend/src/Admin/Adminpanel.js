@@ -68,7 +68,7 @@ const AdminPanel = () => {
     e.preventDefault();
     setIsLoading(true);
     try {
-      await axios.post("/api/movies/add", formData);
+      await axios.post("https://watchly-leod.onrender.com/api/movies/add", formData);
       alert("Movie added successfully!");
       setFormData({ caption: '', message_id: '', quality: '', year: '', poster: '', genre: '', rating: '' });
       const res = await axios.get("/api/movies");
