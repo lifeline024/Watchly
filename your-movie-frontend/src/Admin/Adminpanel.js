@@ -45,10 +45,10 @@ const AdminPanel = () => {
       setIsLoading(true);
       try {
         if (["edit", "remove", "dashboard"].includes(activeTab)) {
-          const res = await axios.get("/api/movies");
+          const res = await axios.get("https://watchly-leod.onrender.com/api/movies");
           setMovies(res.data);
         } else if (activeTab === "messages") {
-          const res = await axios.get("/api/messages");
+          const res = await axios.get("https://watchly-leod.onrender.com/api/messages");
           setMessages(res.data);
         }
       } catch (err) {
@@ -71,7 +71,7 @@ const AdminPanel = () => {
       await axios.post("https://watchly-leod.onrender.com/api/movies/add", formData);
       alert("Movie added successfully!");
       setFormData({ caption: '', message_id: '', quality: '', year: '', poster: '', genre: '', rating: '' });
-      const res = await axios.get("/api/movies");
+      const res = await axios.get("https://watchly-leod.onrender.com/api/movies");
       setMovies(res.data);
     } catch (err) {
       alert("Failed to add movie: " + err.message);
@@ -93,7 +93,7 @@ const AdminPanel = () => {
       await axios.put(`https://watchly-leod.onrender.com/api/movies/${editId}`, formData);
       alert("Movie updated successfully!");
       setActiveTab("edit");
-      const res = await axios.get("/api/movies");
+      const res = await axios.get("https://watchly-leod.onrender.com/api/movies");
       setMovies(res.data);
     } catch (err) {
       alert("Failed to update movie: " + err.message);
@@ -106,7 +106,7 @@ const AdminPanel = () => {
     if (window.confirm("Are you sure you want to delete this movie?")) {
       setIsLoading(true);
       try {
-        await axios.delete(`/api/movies/${id}`);
+        await axios.delete(`https://watchly-leod.onrender.com/api/movies/${id}`);
         setMovies(prev => prev.filter(m => m._id !== id));
         alert("Movie deleted successfully!");
       } catch (err) {
@@ -130,7 +130,7 @@ const AdminPanel = () => {
     setIsLoading(true);
     try {
       await Promise.all(
-        selectedMovies.map(id => axios.delete(`/api/movies/${id}`))
+        selectedMovies.map(id => axios.delete(`https://watchly-leod.onrender.com/api/movies/${id}`))
       );
       setMovies(prev => prev.filter(m => !selectedMovies.includes(m._id)));
       setSelectedMovies([]);
