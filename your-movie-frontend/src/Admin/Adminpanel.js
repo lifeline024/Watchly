@@ -1,4 +1,4 @@
-/*
+
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FiHome, FiPlusCircle, FiEdit2, FiTrash2, FiUsers, FiSearch, FiChevronRight, FiMail, FiLock } from "react-icons/fi";
@@ -592,4 +592,3 @@ const AdminPanel = () => {
 };
 
 export default AdminPanel;
-*/
