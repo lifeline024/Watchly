@@ -90,7 +90,7 @@ const AdminPanel = () => {
     e.preventDefault();
     setIsLoading(true);
     try {
-      await axios.put(`/api/movies/${editId}`, formData);
+      await axios.put(`https://watchly-leod.onrender.com/api/movies/${editId}`, formData);
       alert("Movie updated successfully!");
       setActiveTab("edit");
       const res = await axios.get("/api/movies");
