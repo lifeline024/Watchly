@@ -1,14 +1,15 @@
 
 :root {
-          --primary: #4361ee;
-          --primary-dark: #3a56d4;
-          --danger: #f72585;
-          --danger-dark: #e5177e;
-          --dark: #1a1a;
-          --light: #f8f9fa;
-          --gray: #6c757d;
-          --sidebar-width: 280px;
-        }
+  --primary: #4361ee;
+  --primary-dark: #3a56d4;
+  --danger: #f72585;
+  --danger-dark: #e5177e;
+  --dark: green;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+  --sidebar-width: 280px;
+}
+
         
         * {
           box-sizing: border-box;
@@ -89,7 +90,7 @@
           opacity: 0.7;
         }
         
-        /* Main Content Styles */
+       
         .main-content {
           flex: 1;
           padding: 30px 40px;
@@ -131,7 +132,7 @@
           font-weight: 600;
         }
         
-        /* Dashboard Styles */
+     
         .dashboard {
           max-width: 1200px;
         }
@@ -162,7 +163,7 @@
           font-weight: 600;
         }
         
-        /* Form Styles */
+      
         .form-container {
           max-width: 700px;
           background: white;
@@ -447,7 +448,7 @@
           font-size: 0.9rem;
         }
         
-        /* Message Styles */
+    
         .message-list {
           display: grid;
           gap: 20px;
@@ -504,7 +505,6 @@
           box-shadow: 0 5px 15px rgba(0,0,0,0.03);
         }
         
-        /* Users Container */
         .users-container {
           max-width: 800px;
           background: white;
@@ -521,7 +521,7 @@
           color: var(--gray);
         }
         
-        /* Responsive Styles */
+        
         @media (max-width: 768px) {
           .admin-panel {
             flex-direction: column;
@@ -563,7 +563,7 @@
           }
         }
 
-       */
+       
 .login-container {
   display: flex;
   justify-content: center;
@@ -625,7 +625,6 @@
   font-size: 0.875rem;
 }
 
-/* Form group styles for login */
 .login-box .form-group {
   margin-bottom: 1.5rem;
   text-align: left;
