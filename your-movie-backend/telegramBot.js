@@ -33,7 +33,7 @@ bot.on('channel_post', async (ctx) => {
     const yearMatch = caption.match(/(19|20)\d{2}/);
     const extractedYear = yearMatch ? yearMatch[0] : "Unknown";
 
-    let posterUrl = null;
+    let posterUrl = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmuuQo5RPJEqJdnjlIhVXbXW2gZBYHnDzpYzQQVx0uWmXqBgrsd4q9Mv0Sxi-4Iexwuxs&usqp=CAU;
 
     // Try fetching poster from OMDb
     try {
