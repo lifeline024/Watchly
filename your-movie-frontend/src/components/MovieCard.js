@@ -21,7 +21,7 @@ export default function MovieCard({ movie, onClick }) {
         )}
       </div>
       <div className="movie-info">
-        <h3 className="movie-title" style={{ color: "red" }}>
+        <h3 className="movie-title" style={{ color: "green" }}>
   {movie.title || movie.caption || "Untitled Movie"}
 </h3>
 
